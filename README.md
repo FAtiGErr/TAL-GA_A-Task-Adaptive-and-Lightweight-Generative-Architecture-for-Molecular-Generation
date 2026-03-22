@@ -93,29 +93,4 @@ python mosesBenchmark.py --rounds 5
   - `OMP_NUM_THREADS=1`
   - `MKL_NUM_THREADS=1`
 
-## Publish to GitHub (skip NPZ and files >25MB)
-
-This repository includes `publish_github.ps1` for one-click sync.
-
-What it does:
-
-- Initializes git repo if needed
-- Ensures `origin` matches your repository URL
-- Stages changes
-- Automatically skips:
-  - all `.npz` files
-  - any staged file larger than 25MB (configurable)
-- Commits only when there are actual changes
-- Pushes to `origin/main`
-
-PowerShell examples:
-
-```powershell
-# Dry run: commit only, do not push
-powershell -ExecutionPolicy Bypass -File .\publish_github.ps1 -NoPush -CommitMessage "chore: local sync"
-
-# Normal one-click upload
-powershell -ExecutionPolicy Bypass -File .\publish_github.ps1 -CommitMessage "chore: update code and evaluation csv"
-```
-
 Because git tracks content by commit state, rerunning this script does not re-upload unchanged files.
