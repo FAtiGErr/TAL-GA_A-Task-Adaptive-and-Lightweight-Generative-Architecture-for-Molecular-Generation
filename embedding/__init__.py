@@ -1,0 +1,1 @@
+from .loadEmbedding import embeddingMatrix

@@ -1,0 +1,20 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# IDE
+.idea/
+
+# Binary outputs from PSO runs
+*.npz
+
+# Keep only evaluation CSV artifacts under results/
+results/**
+!results/
+!results/**/
+!results/**/*.csv
+
+# Optional local logs/temp
+*.log
+*.tmp
+

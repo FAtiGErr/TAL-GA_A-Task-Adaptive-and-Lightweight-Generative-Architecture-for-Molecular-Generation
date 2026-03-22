@@ -1,0 +1,5 @@
+objective,property,target,seed_total,seed_loaded,seed_corrupted,corrupted_seeds,decoded_smiles,validity_percent,diversity_percent
+MULTI-OBJECTIVE-R3,LOGP-TPSA,1.0-20.0,100,100,0,,10000,99.98,21.05
+MULTI-OBJECTIVE-R3,LOGP-TPSA,2.0-40.0,100,100,0,,10000,99.98,87.32
+MULTI-OBJECTIVE-R3,LOGP-TPSA,3.0-60.0,100,100,0,,10000,100.0,94.92
+MULTI-OBJECTIVE-R3,LOGP-TPSA,4.0-80.0,100,100,0,,10000,99.99,97.36

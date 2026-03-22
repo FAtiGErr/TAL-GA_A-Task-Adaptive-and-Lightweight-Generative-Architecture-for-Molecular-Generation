@@ -1,0 +1,25 @@
+# MolDesign (Python 3.7) pip dependencies
+# Recommended: use environment.yml for Windows + RDKit.
+
+numpy==1.21.6
+pandas==1.3.5
+scipy==1.7.3
+scikit-learn==1.0.2
+tqdm==4.66.5
+openpyxl==3.1.2
+pillow==9.5.0
+
+tensorflow==2.10.1
+keras==2.10.0
+protobuf==3.19.6
+h5py==3.7.0
+
+optuna==2.10.1
+
+# MOSES benchmark package (used in mosesBenchmark.py)
+moses==0.10.0
+
+# RDKit via pip may be unavailable/unstable on some Windows setups.
+# If pip install fails, install RDKit from conda-forge instead.
+rdkit-pypi==2022.9.5
+
